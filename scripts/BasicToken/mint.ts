@@ -7,7 +7,7 @@ const DEPLOYED_TOKEN_CONTRACT_ADDRESS = process.env.DEPLOYED_TOKEN_CONTRACT_ADDR
 async function main() {
 
     if (DEPLOYED_TOKEN_CONTRACT_ADDRESS === undefined || !DEPLOYED_TOKEN_CONTRACT_ADDRESS.startsWith(`0x`)) {
-        throw Error("Please first add the DEPLOYED_NFT_CONTRACT_ADDRESS to the .env file")
+        throw Error("Please first add the DEPLOYED_TOKEN_CONTRACT_ADDRESS to the .env file")
     }
 
     console.log(`--- Minting Tokens (${DEPLOYED_TOKEN_CONTRACT_ADDRESS}) ---`)
