@@ -1,6 +1,6 @@
 # Hardhat Proxy Boilerplate
 
-This project demonstrates a usecase of common contracts and libraries used in a typical smart contract project.
+This project demonstrates the following common contracts, patterns and libraries along with their associated tests, deployment modules and scripts:
 
 ## BasicToken
 A basic ERC20 token contract utilizing openzeppelin contracts.
@@ -95,6 +95,8 @@ The addresses are displayed in the console once deployed and can be located in t
 
 After deploying to a network that contains an explorer. For example [Polygon Amoy](https://amoy.polygonscan.com/) or [Polygon Mainnet](https://polygonscan.com/) you can verify your contract. This means submitting the contract code to the explorer so that it can be used to verify the contract's bytecode. Once a contracts source code is verified you can interact with it on the explorer by connecting your wallet.
 
+- See [Documentation](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#usage)
+
 ## Verify BasicToken
 
 ### Values:
@@ -138,7 +140,7 @@ After deploying to a network that contains an explorer. For example [Polygon Amo
 2. Verify Proxy Admin
 `npx hardhat verify  --network <network> <proxy_admin_contract> <owner_address>`
 
-3. Verify Proxy -- See Complex Arguments - https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#complex-arguments
+3. Verify Proxy
 `npx hardhat verify  --network <network> <proxy_admin_contract> <implementation_address> <owner_address> 0x`
 
 # Running Scripts
