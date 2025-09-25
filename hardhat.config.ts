@@ -4,7 +4,7 @@ import "@nomicfoundation/hardhat-toolbox-viem";
 import "@nomicfoundation/hardhat-verify";
 
 import * as dotenv from "dotenv"
-dotenv.config()
+dotenv.config();
 
 const config: HardhatUserConfig = {
   defaultNetwork: "localhost",
